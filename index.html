@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cronómetro</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="tittle">
+        <h1>Cronómetro</h1>
+    </header>
+    <section>
+        <header>
+            
+        </header>
+        <article>
+            <div class="row">
+                <div class="contenedor-secundario">
+                    <div class="reloj-secundario" id="Horas2">00</div>
+                    <div class="reloj-secundario" id="Minutos2">:00</div>
+                    <div class="reloj-secundario" id="Segundos2">:00</div>
+                    <div class="reloj-secundario" id="Centesimas2">:00</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contenedor">
+                    <div class="reloj-principal" id="Horas">00</div>
+                    <div class="reloj-principal" id="Minutos">:00</div>
+                    <div class="reloj-principal" id="Segundos">:00</div>
+                    <div class="reloj-principal" id="Centesimas">:00</div>
+                </div>
+            </div>
+            <div id="div-buttons" class="row">
+                <div id="buttons" class="container-button">
+                    <button id="start" type="button" class="btn" onclick="inicio();">Start</button>
+                    <button id="reset" type="button" class="btn" onclick="reinicio();" >Reset</button>
+                </div>
+            </div>
+            <div id="laps" class="text-center padd-top scroll">
+            </div>
+        </article>
+        <footer>
+
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

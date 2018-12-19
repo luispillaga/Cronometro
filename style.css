@@ -1,0 +1,118 @@
+body{
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f1f1f1;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.contenedor{
+	margin: 10px auto;
+	max-width: 760px;
+	max-height: 115px;
+}
+.reloj-principal{
+	float: left;
+	font-size: 110px;
+	font-family: Courier,sans-serif;
+	color: #FF5E5E;
+}
+.contenedor-secundario{
+	margin: 10px auto;
+	max-width: 260px;
+	max-height: 55px;
+    
+}
+.reloj-secundario{
+	float: left;
+	font-size: 30px;
+	font-family: Courier,sans-serif;
+	color: #FFC9A5;
+}
+.tittle{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 30px;
+}
+.container-button{
+    margin: 10px auto;
+	max-width: 260px;
+	max-height: 55px;
+    display: inline-block;
+}
+.btn{
+    background-color: #FF5E5E;
+    font-size: 20px;
+    color: #f1f1f1;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #FF5E5E;
+    margin-right: 20px;
+}
+.btn:hover{
+    color: #FF5E5E;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+}
+.contenedor-laps{
+	margin: 10px auto;
+	max-width: 100%;
+	max-height: 115px;
+}
+.text-center{
+    text-align: center;
+}
+.padd-top{
+    margin-top: 10%;
+}
+.scroll{
+    overflow-y: scroll;
+}
+.lap-text{
+    font-size: 20px;
+    color: white;
+}
+.lap-tittle{
+    font-size: 25px;
+    color: #FF5E5E;
+}
+
+@media only screen and (max-width: 767px) {
+body {
+    background-image: url(fondo-mobile.jpg);
+}
+.reloj-principal{
+	font-size: 105px;
+}    
+}
+@media only screen and (max-width: 710px) {
+body {
+    background-image: url(fondo-mobile.jpg);
+}
+    
+.reloj-principal{
+	font-size: 95px;
+}    
+}
+@media only screen and (max-width: 644px) {
+.reloj-principal{
+	font-size: 65px;
+}
+    .padd-top{
+        margin-top: 15%;
+    }    
+}
+@media only screen and (max-width: 415px) {
+.reloj-principal{
+	font-size: 52px;
+}
+    }
